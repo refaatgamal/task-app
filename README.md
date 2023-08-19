@@ -7,46 +7,37 @@ This is a Laravel project for task management.
 Follow the steps below to install and set up the project:
 
 1. Clone the repository:
-
-   ```shell
    git clone https://github.com/your-username/your-repository.git
-Navigate to the project directory:
 
-shell
-Copy
-cd your-repository
-Copy the .env.example file and rename it to .env:
+2. Navigate to the project directory:
+   cd your-repository
 
-shell
-Copy
-cp .env.example .env
-Create a new database called task_app in your database management system (e.g., MySQL).
+3. Copy the `.env.example` file and rename it to `.env`:
+   cp .env.example .env
 
-Open the .env file and update the following lines with your database credentials:
+4. Create a new database called `task_app` in your database management system (e.g., MySQL).
 
-dotenv
-Copy
-DB_DATABASE=task_app
-DB_USERNAME=your-database-username
-DB_PASSWORD=your-database-password
-Install the project dependencies using Composer:
+5. Open the `.env` file and update the following lines with your database credentials:
+   DB_DATABASE=task_app
+   DB_USERNAME=your-database-username
+   DB_PASSWORD=your-database-password
 
-shell
-Copy
-composer install
-Generate a new application key:
+6. Install the project dependencies using Composer:
+   composer install
 
-shell
-Copy
-php artisan key:generate
-Run the database migrations to create the necessary tables:
+7. Generate a new application key:
+   php artisan key:generate
 
-shell
-Copy
-php artisan migrate
-Start the development server:
+8. Run the database migrations to create the necessary tables:
+   php artisan migrate
 
-shell
-Copy
-php artisan serve
-Access the application by visiting http://localhost:8000 in your web browser.
+9. Start the development server:
+   php artisan serve
+
+10. Access the application by visiting http://localhost:8000 in your web browser.
+
+If you encounter any issues during the installation process, please make sure you have the required dependencies installed, and double-check your database credentials in the `.env` file.
+
+## License
+
+This project is licensed under the MIT License.
