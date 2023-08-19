@@ -1,4 +1,4 @@
-# Laravel Project
+# Task App
 
 This is a Laravel project for task management.
 
